@@ -26,7 +26,7 @@ function App() {
 
   //Mensaje de Inicio:
   const titulo =
-    citas.length === 0 ? "Agrega Citas" : "Administra Citas";
+    citas.length === 0 || null ? "Agrega Citas" : "Administra Citas";
 
   return (
     <Fragment>
@@ -51,8 +51,5 @@ function App() {
     </Fragment>
   );
 }
-
-
-
 
 export default App;
